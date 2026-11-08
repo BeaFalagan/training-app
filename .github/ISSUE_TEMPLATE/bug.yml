@@ -1,0 +1,30 @@
+name: Error
+description: Algo no funciona como debería
+labels: [bug]
+body:
+  - type: textarea
+    id: que-pasa
+    attributes:
+      label: Qué pasa
+      description: Describe el error. Si puedes, añade una captura.
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Cómo reproducirlo
+      placeholder: |
+        1. Entra en…
+        2. Pulsa…
+        3. Aparece…
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Qué esperabas que pasara
+  - type: input
+    id: navegador
+    attributes:
+      label: Navegador y tamaño de pantalla
+      placeholder: Chrome 140, escritorio

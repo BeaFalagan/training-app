@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Entreno · La app para entrenadores personales y sus clientes</title>
+    <meta
+      name="description"
+      content="Entreno es una app web para entrenadores personales: prepara planes semanales, invita a tus clientes y deja que entrenen guiados con temporizador e ilustraciones animadas."
+    />
+    <!-- Cambia https://example.com por tu dominio (también en robots.txt, sitemap.xml y llms.txt) -->
+    <link rel="canonical" href="https://example.com/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0A0A0A" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Entreno" />
+    <meta property="og:title" content="Entreno · La app para entrenadores personales y sus clientes" />
+    <meta
+      property="og:description"
+      content="Planes semanales, temporizador guiado e ilustraciones animadas de cada ejercicio."
+    />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://example.com/img/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/img/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/img/logo.png" />
+    <link rel="preload" as="image" href="/img/hero.jpg" fetchpriority="high" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script>document.documentElement.classList.add('js');</script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "@id": "https://example.com/#app",
+            "name": "Entreno",
+            "url": "https://example.com/",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "Web",
+            "inLanguage": "es",
+            "description": "App web para entrenadores personales: planes semanales, invitación de clientes por código y entrenamiento guiado con temporizador.",
+            "featureList": [
+              "Planes semanales por días y bloques",
+              "Series, circuito, EMOM, AMRAP, Tabata y For Time",
+              "Temporizador guiado con rondas y descansos",
+              "Ilustraciones animadas de cada ejercicio",
+              "Material necesario calculado automáticamente"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Mis clientes tienen que instalar algo?",
+                "acceptedAnswer": { "@type": "Answer", "text": "No. Entreno funciona en el navegador, en el ordenador o en el teléfono. El cliente entra con un código de invitación y crea su contraseña." }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué datos guarda la app?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Solo el nombre, el email y los planes de entrenamiento. No guarda datos de salud ni otros datos personales." }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué formatos de entrenamiento admite?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Series con descanso, circuitos, EMOM, AMRAP, Tabata y For Time, combinables en un mismo día." }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="nav" id="nav">
+      <a class="brand" href="/" aria-label="Entreno, inicio">
+        <img src="/img/logo.png" alt="" width="40" height="40" />
+        <span>ENTRENO</span>
+      </a>
+      <nav aria-label="Secciones">
+        <a href="#funciones">Funciones</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#ejercicios">Ejercicios</a>
+        <a href="#faq">Preguntas</a>
+      </nav>
+      <a class="btn btn-sm btn-primary" href="/login">Acceder</a>
+    </header>
+
+    <main id="contenido">
+      <!-- PORTADA -->
+      <section class="hero" aria-labelledby="titulo">
+        <div class="hero-bg" aria-hidden="true">
+          <img src="/img/hero.jpg" alt="" width="1600" height="1000" fetchpriority="high" />
+        </div>
+        <div class="hero-content">
+          <div class="hero-badges reveal">
+            <p class="chip chip-free">App web · sin instalar nada</p>
+          </div>
+          <h1 id="titulo" class="reveal">
+            <span class="h1-small">Entrena con</span>
+            <span class="h1-big">plan</span>
+          </h1>
+          <p class="hero-move reveal" aria-hidden="true">Cada semana.</p>
+          <p class="hero-text reveal">
+            <strong>Entreno</strong> es la app para entrenadores personales y sus clientes: tú preparas el plan semanal
+            y ellos entrenan guiados, ejercicio a ejercicio, <strong>en el centro o desde casa.</strong>
+          </p>
+          <div class="hero-ctas reveal">
+            <a class="btn btn-primary btn-lg" href="/login">Acceder a la app</a>
+            <a class="btn btn-ghost btn-lg" href="#funciones">Ver funciones</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FRANJA -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Series</span><span>Circuito</span><span>EMOM</span><span>AMRAP</span><span>Tabata</span
+          ><span>For Time</span>
+          <span>Series</span><span>Circuito</span><span>EMOM</span><span>AMRAP</span><span>Tabata</span
+          ><span>For Time</span>
+        </div>
+      </div>
+
+      <!-- FUNCIONES -->
+      <section id="funciones" class="section container" aria-labelledby="funciones-titulo">
+        <p class="eyebrow reveal">Funciones</p>
+        <h2 id="funciones-titulo" class="reveal">Todo lo que necesita un entrenador personal</h2>
+        <p class="lead reveal">
+          Menos hojas de cálculo y mensajes sueltos: cada cliente tiene su semana preparada y sabe exactamente qué hacer.
+        </p>
+
+        <div class="bento">
+          <article class="card card-photo card-xl reveal">
+            <img src="/img/banner.jpg" alt="Ilustración de figuras haciendo zancadas, press de hombro y comba" width="1600" height="600" decoding="async" />
+            <div class="card-body">
+              <span class="tag">Para el entrenador</span>
+              <h3>Planes semanales en minutos</h3>
+              <p>
+                Organiza cada día en bloques, elige ejercicios de la biblioteca y publica. Repite la semana anterior o
+                duplícala para otro cliente con un clic.
+              </p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <span class="num">01</span>
+            <h3>Panel «Esta semana»</h3>
+            <p>De un vistazo: qué clientes no tienen plan, cuáles están en borrador y cuánto han entrenado.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="num">02</span>
+            <h3>Invitación por código</h3>
+            <p>Das de alta al cliente y le envías un código por WhatsApp. Sin depender de emails de confirmación.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="num">03</span>
+            <h3>Temporizador guiado</h3>
+            <p>Cuenta atrás, rondas, descansos y pitidos 3-2-1. El cliente solo tiene que seguir la pantalla.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="num">04</span>
+            <h3>Material necesario</h3>
+            <p>Antes de empezar, el cliente ve qué necesita: pesos de mancuerna, color de cada goma, comba…</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="num">05</span>
+            <h3>Progreso</h3>
+            <p>Racha, minutos entrenados y calendario de actividad para el cliente y para su entrenador.</p>
+          </article>
+
+          <article class="card card-photo card-wide reveal">
+            <img src="/img/banner-2.jpg" alt="Ilustración de figuras entrenando con gomas elásticas" width="1600" height="600" loading="lazy" />
+            <div class="card-body">
+              <span class="tag">Privacidad por diseño</span>
+              <h3>Datos mínimos</h3>
+              <ul class="checks">
+                <li>Solo nombre, email y planes de entrenamiento</li>
+                <li>Sin datos de salud ni otros datos personales</li>
+                <li>Cada usuario ve únicamente lo suyo</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CÓMO FUNCIONA -->
+      <section id="como-funciona" class="section method" aria-labelledby="como-titulo">
+        <div class="container">
+          <p class="eyebrow reveal">Cómo funciona</p>
+          <h2 id="como-titulo" class="reveal">De tu plan a su entrenamiento</h2>
+          <ol class="steps">
+            <li class="reveal">
+              <span>1</span>
+              <h3>Invitas al cliente</h3>
+              <p>Lo das de alta con su nombre y email, y le envías su código de acceso.</p>
+            </li>
+            <li class="reveal">
+              <span>2</span>
+              <h3>Preparas su semana</h3>
+              <p>Días, bloques y ejercicios con series, repeticiones, tiempos y cargas.</p>
+            </li>
+            <li class="reveal">
+              <span>3</span>
+              <h3>Entrena guiado</h3>
+              <p>El temporizador le lleva paso a paso, con la ilustración de cada ejercicio.</p>
+            </li>
+            <li class="reveal">
+              <span>4</span>
+              <h3>Sigues su progreso</h3>
+              <p>Ves qué días ha entrenado y cuánto, y preparas la semana siguiente.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- EJERCICIOS -->
+      <section id="ejercicios" class="section gallery-section" aria-labelledby="ejercicios-titulo">
+        <div class="container">
+          <p class="eyebrow reveal">Biblioteca de ejercicios</p>
+          <h2 id="ejercicios-titulo" class="reveal">Más de 40 ejercicios con ilustración animada</h2>
+        </div>
+        <div class="gallery">
+          <figure class="reveal"><img src="/img/ej-sentadilla.jpg" alt="Ilustración de sentadilla goblet" width="900" height="1200" loading="lazy" /></figure>
+          <figure class="reveal"><img src="/img/ej-goma.jpg" alt="Ilustración de remo con goma elástica" width="900" height="1200" loading="lazy" /></figure>
+          <figure class="reveal"><img src="/img/ej-flexiones.jpg" alt="Ilustración de flexiones" width="900" height="1200" loading="lazy" /></figure>
+          <figure class="reveal"><img src="/img/ej-comba.jpg" alt="Ilustración de salto a la comba" width="900" height="1200" loading="lazy" /></figure>
+          <figure class="reveal"><img src="/img/ej-plancha.jpg" alt="Ilustración de plancha" width="900" height="1200" loading="lazy" /></figure>
+        </div>
+      </section>
+
+      <!-- CLIENTE -->
+      <section class="section container split split-reverse" aria-labelledby="cliente-titulo">
+        <div class="split-text">
+          <p class="eyebrow reveal">Para el cliente</p>
+          <h2 id="cliente-titulo" class="reveal">Su entrenador, también fuera del centro</h2>
+          <p class="reveal">
+            Cada cliente abre la app y encuentra el entrenamiento de hoy. Sin dudas sobre qué toca, cuántas series o
+            cuánto descansar.
+          </p>
+          <ul class="features reveal">
+            <li>Entrenamiento del día y resumen de la semana</li>
+            <li>Ilustración o vídeo de cada ejercicio</li>
+            <li>Temporizador con rondas, descansos y cuenta atrás</li>
+            <li>Material necesario y seguimiento del progreso</li>
+          </ul>
+          <a class="btn btn-primary reveal" href="/login">Acceder a la app</a>
+        </div>
+        <figure class="split-photo split-photo-wide reveal">
+          <img src="/img/acceso.jpg" alt="Ilustración de una figura haciendo peso muerto rumano" width="1000" height="1400" decoding="async" />
+        </figure>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section container faq" aria-labelledby="faq-titulo">
+        <p class="eyebrow reveal">Preguntas frecuentes</p>
+        <h2 id="faq-titulo" class="reveal">Lo que más nos preguntan</h2>
+        <div class="faq-list">
+          <details class="reveal" open>
+            <summary>¿Mis clientes tienen que instalar algo?</summary>
+            <p>No. Entreno funciona en el navegador, en el ordenador o en el teléfono. El cliente entra con un código de invitación y crea su contraseña.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Qué datos guarda la app?</summary>
+            <p>Solo el nombre, el email y los planes de entrenamiento. No guarda datos de salud ni otros datos personales.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Qué formatos de entrenamiento admite?</summary>
+            <p>Series con descanso, circuitos, EMOM, AMRAP, Tabata y For Time, combinables en un mismo día.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Puedo usar mis propios vídeos?</summary>
+            <p>Sí. Cada ejercicio puede tener un vídeo propio o una de las ilustraciones animadas incluidas.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Puede haber varios entrenadores?</summary>
+            <p>Sí. Cada entrenador gestiona a sus clientes, comparten la biblioteca de ejercicios y una cuenta de administración da de alta o de baja a entrenadores y clientes.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section class="cta" aria-labelledby="cta-titulo">
+        <div class="container cta-inner">
+          <p class="cta-kicker reveal">Empieza hoy</p>
+          <h2 id="cta-titulo" class="reveal">Tu próxima semana ya tiene plan</h2>
+          <p class="reveal">Accede con tu cuenta o con el código de invitación que te ha enviado tu entrenador.</p>
+          <div class="hero-ctas reveal">
+            <a class="btn btn-light btn-lg" href="/login">Acceder a la app</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a class="brand" href="/"><img src="/img/logo.png" alt="" width="44" height="44" /><span>ENTRENO<small>App de entrenamiento</small></span></a>
+        <p>Planes semanales y entrenamiento guiado para entrenadores personales y sus clientes.</p>
+        <a class="btn btn-sm btn-primary" href="/login">Acceder</a>
+      </div>
+      <p class="copy">© <span id="year">2026</span> Entreno</p>
+    </footer>
+
+    <script>
+      // Animaciones de aparición al hacer scroll y sombra de la barra superior
+      (function () {
+        document.getElementById('year').textContent = new Date().getFullYear();
+        var nav = document.getElementById('nav');
+        var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 24); };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+        var items = document.querySelectorAll('.reveal');
+        if (!('IntersectionObserver' in window)) { items.forEach(function (el) { el.classList.add('in'); }); return; }
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        items.forEach(function (el) { io.observe(el); });
+      })();
+      // Si hay una sesión guardada de la app, el acceso lleva directamente a ella
+      (function () {
+        try {
+          for (var i = 0; i < localStorage.length; i++) {
+            if (/^sb-.*-auth-token$/.test(localStorage.key(i) || '')) {
+              document.querySelectorAll('a[href="/login"]').forEach(function (a) {
+                a.textContent = 'Ir a mi app';
+                a.setAttribute('href', '/dashboard');
+              });
+              break;
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </body>
+</html>

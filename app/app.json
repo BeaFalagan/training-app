@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Entreno",
+    "slug": "entreno",
+    "scheme": "entreno",
+    "version": "1.0.0",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0A0A",
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "bundler": "metro",
+      "name": "Entreno",
+      "shortName": "Entreno",
+      "themeColor": "#0A0A0A",
+      "backgroundColor": "#0A0A0A"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": false,
+          "supportsPictureInPicture": true
+        }
+      ],
+      "expo-audio",
+      "expo-image",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Entreno necesita acceso a tu galería para subir vídeos de ejercicios.",
+          "cameraPermission": "Entreno necesita acceso a la cámara para grabar vídeos de ejercicios."
+        }
+      ],
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

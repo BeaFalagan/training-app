@@ -1,0 +1,21 @@
+# Entreno
+
+> App web para entrenadores personales y sus clientes. El entrenador prepara planes semanales y el cliente entrena guiado con temporizador e ilustraciones animadas de cada ejercicio.
+
+## Qué hace
+
+- Planes semanales por días y bloques: series, circuito, EMOM, AMRAP, Tabata y For Time.
+- Invitación de clientes con código de acceso, sin depender del email.
+- Temporizador guiado con cuenta atrás, rondas, descansos y pitidos.
+- Más de 40 ejercicios con ilustración animada, o vídeo propio.
+- Material necesario calculado a partir de los ejercicios del día.
+- Panel del entrenador con el estado y el progreso de cada cliente.
+
+## Privacidad
+
+Solo guarda nombre, email y planes de entrenamiento. Sin datos de salud.
+
+## Enlaces
+
+- Web: https://example.com/
+- Acceso: https://example.com/login

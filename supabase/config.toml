@@ -1,0 +1,16 @@
+# Configuración mínima para `supabase` CLI. Ejecuta `supabase link --project-ref <ref>`
+# para vincular este directorio a tu proyecto.
+project_id = "entreno"
+
+[auth]
+site_url = "http://localhost:8081"
+additional_redirect_urls = ["https://tu-dominio.com/**"]
+# Solo se entra por invitación del entrenador
+enable_signup = false
+
+[auth.email]
+enable_signup = false
+otp_length = 6
+
+[functions.invite-client]
+verify_jwt = true

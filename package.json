@@ -1,0 +1,17 @@
+{
+  "name": "entreno",
+  "private": true,
+  "description": "Entreno: app web para entrenadores personales y sus clientes (Expo + Supabase).",
+  "scripts": {
+    "postinstall": "npm install --prefix app",
+    "dev": "npm run start --prefix app",
+    "build:web": "npm run build:web --prefix app",
+    "typecheck": "npm run typecheck --prefix app",
+    "lint": "npm run lint --prefix app",
+    "test": "npm test --prefix app",
+    "check": "npm run typecheck && npm run lint && npm test"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}

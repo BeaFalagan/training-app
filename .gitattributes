@@ -1,0 +1,16 @@
+# Finales de línea normalizados
+* text=auto eol=lf
+
+# Binarios
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.wav binary
+*.mp4 binary
+*.ttf binary
+*.woff2 binary
+
+# Generados: fuera de los diffs y de las estadísticas de lenguaje
+package-lock.json linguist-generated=true -diff
